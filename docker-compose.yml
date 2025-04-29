@@ -14,7 +14,7 @@ services:
       - DB_CONNECTION=pgsql
       - DB_HOST=db
       - DB_PORT=5432
-      - DB_DATABASE=taskmanager
+      - DB_DATABASE=clientmanager
       - DB_USERNAME=postgres
       - DB_PASSWORD=postgres
     user: "1000:1000"
@@ -28,7 +28,7 @@ services:
     container_name: postgres_db
     restart: unless-stopped
     environment:
-      POSTGRES_DB: taskmanager
+      POSTGRES_DB: clientmanager
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
